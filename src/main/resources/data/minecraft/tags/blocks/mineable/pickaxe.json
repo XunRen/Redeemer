@@ -1,6 +1,7 @@
 {
   "replace": false,
   "values": [
-    "redeemer:crystaliron_ore"
+    "redeemer:crystaliron_ore",
+    "redeemer:deepslate_crystaliron_ore"
   ]
 }

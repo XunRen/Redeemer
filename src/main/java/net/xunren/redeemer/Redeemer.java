@@ -20,6 +20,8 @@ import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import net.xunren.redeemer.block.ModBlocks;
 import net.xunren.redeemer.item.ModCreativeModeTab;
 import net.xunren.redeemer.item.ModItems;
+import net.xunren.redeemer.world.feature.ModConfiguredFeatures;
+import net.xunren.redeemer.world.feature.ModPlacedFeatures;
 import org.slf4j.Logger;
 
 @Mod(Redeemer.MOD_ID)
@@ -35,6 +37,9 @@ public class Redeemer {
 
         ModItems.register(modEventBus);
         ModBlocks.register(modEventBus);
+
+        ModConfiguredFeatures.register(modEventBus);
+        ModPlacedFeatures.register(modEventBus);
 
         MinecraftForge.EVENT_BUS.register(this);
     }
